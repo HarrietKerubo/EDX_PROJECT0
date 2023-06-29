@@ -1,0 +1,35 @@
+@use'custom' as *; 
+
+.navbar{
+ 
+   position: absolute;
+
+    a{
+        padding-right: 0.8rem;
+        text-decoration: none;
+    }
+
+    a:link,a:visited{
+        color:black;
+      
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    i{
+        padding-right: 0.8rem;
+    }
+
+    .btn{
+        background-color: $primary;
+        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+    }
+   
+  }
+  
+
+  
+  /* import bootstrap */
+  @import "../node_modules/bootstrap/scss/bootstrap.scss";
