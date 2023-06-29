@@ -18,18 +18,56 @@
         text-decoration: underline;
     }
 
-    i{
-        padding-right: 0.8rem;
-    }
-
-    .btn{
-        background-color: $primary;
-        padding: 0.4rem 1.5rem 0.4rem 1.5rem;
-    }
-   
-  }
   
 
+     .btn-primary{
+        background-color: $primary !important;
+        border: 1px solid transparent !important;
+        color: #202124 !important;
+        box-shadow: none !important;
+        padding: 0.4rem 1.8rem 0.4rem 1.8rem !important;
+        
+    }
+    .no-underline:hover{
+        text-decoration: none;
+      }
+       
+    .dot-container{
+        position:relative;
+        display:inline-block;
+     
+    }
+
+    .circle{
+        height: 40px;
+        width: 40px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .dot-container:hover .circle {
+        display: inline-block;
+       
+      }
+
+    
+      i{
+        padding-left:1.5rem ;
+        padding-right:1.5rem ;
+        position: relative;
+        z-index: 2;
+        
+        }
+
+
+    }
+
+ 
+  
   
   /* import bootstrap */
   @import "../node_modules/bootstrap/scss/bootstrap.scss";
