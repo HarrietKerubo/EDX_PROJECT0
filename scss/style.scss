@@ -41,7 +41,7 @@
     .circle{
         height: 40px;
         width: 40px;
-        background-color: #bbb;
+        background-color: #e0e0e0;
         border-radius: 50%;
         display: none;
         position: absolute;
@@ -63,6 +63,30 @@
         
         }
 
+        @include media-breakpoint-down(sm){
+             
+           
+          
+                a{
+                    padding-right: 0.2rem;
+                   
+                }
+    
+                   
+            .btn-primary{
+                
+                padding: 0.2rem 0.8rem 0.2rem 0.8rem !important;
+                
+            } 
+
+            i{
+                padding-left:0.6rem ;
+                padding-right:0.6rem ;
+            
+                }
+           
+           
+                }
 
     }
 
