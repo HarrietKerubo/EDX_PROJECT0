@@ -11938,6 +11938,35 @@ textarea.form-control-lg {
     height: 92px;
   }
 }
+.search .input-group {
+  position: relative;
+}
+.search .inputf {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 584px;
+  border: 2px solid lightgrey;
+  border-radius: 25px !important;
+  padding: 8px;
+  text-align: center;
+}
+.search .searchicon {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  .search .searchicon {
+    left: 34%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .search .searchicon {
+    left: 15%;
+  }
+}
 
 /* import bootstrap */
 /*!

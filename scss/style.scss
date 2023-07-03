@@ -118,8 +118,77 @@
 
 
 }
+// // .search-input{
+// //     position: relative;
+   
+// .input-group{
 
-  }
+//          .searchicon{
+//             position: absolute;
+//             top: 50%;
+//             left: 35%;
+//             transform: translate(-50%, -50%);
+//             z-index: 1;
+         
+//         }
+
+// .inputf{
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//     max-width: 584px;
+//     border: 2px solid lightgrey;
+//     border-radius: 25px !important;
+//     padding: 8px;
+//     text-align: center;
+   
+//     }
+
+
+
+// }
+// }
+
+// //   }
+
+// .search-input{
+//     position: relative;
+
+.input-group{
+    position:relative;
   
+}
+.inputf{
+margin-top: 1rem;
+margin-bottom: 1rem;
+max-width: 584px;
+border: 2px solid lightgrey;
+border-radius: 25px !important;
+padding: 8px;
+text-align: center;
+
+
+
+}
+.searchicon{
+    position: absolute;
+    top: 50%;
+    // left: 584px;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    @include media-breakpoint-up(lg){
+        left: 34%;
+    }
+    @include media-breakpoint-only(md) {
+        left: 15%;
+    }
+ 
+}
+
+}
+
+
+
   /* import bootstrap */
   @import "../node_modules/bootstrap/scss/bootstrap.scss";
