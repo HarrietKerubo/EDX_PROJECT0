@@ -1,0 +1,15 @@
+@use'../custom' as *; 
+
+.buttons{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 1.7rem; 
+
+
+}
+
+
+
+ /* import bootstrap */
+ @import "../../node_modules/bootstrap/scss/bootstrap.scss";
