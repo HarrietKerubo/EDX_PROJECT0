@@ -1,0 +1,94 @@
+@use'../custom' as *; 
+
+.navbar{
+ 
+    position: absolute;
+  
+     a{
+         padding-right: 0.8rem;
+         text-decoration: none;
+     }
+ 
+     a:link,a:visited{
+         color:black;
+       
+     }
+ 
+     a:hover{
+         text-decoration: underline;
+     }
+ 
+   
+ 
+      .btn-primary{
+         background-color: $primary !important;
+         border: 1px solid transparent !important;
+         color: #202124 !important;
+         box-shadow: none !important;
+         padding: 0.4rem 1.8rem 0.4rem 1.8rem !important;
+         
+     }
+     .no-underline:hover{
+         text-decoration: none;
+       }
+        
+     .dot-container{
+         position:relative;
+         display:inline-block;
+      
+     }
+ 
+     .circle{
+         height: 40px;
+         width: 40px;
+         background-color: #e0e0e0;
+         border-radius: 50%;
+         display: none;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+     }
+     .dot-container:hover .circle {
+         display: inline-block;
+        
+       }
+ 
+     
+       i{
+         padding-left:1.5rem ;
+         padding-right:1.5rem ;
+         position: relative;
+         z-index: 2;
+         
+         }
+ 
+         @include media-breakpoint-down(sm){
+                      
+                 a{
+                     padding-right: 0.2rem;
+                    
+                 }
+     
+                    
+             .btn-primary{
+                 
+                 padding: 0.2rem 0.8rem 0.2rem 0.8rem !important;
+                 
+             } 
+ 
+             i{
+                 padding-left:0.6rem ;
+                 padding-right:0.6rem ;
+             
+                 }
+            
+            
+                 }
+ 
+     }
+
+ 
+
+  /* import bootstrap */
+  @import "../../node_modules/bootstrap/scss/bootstrap.scss";

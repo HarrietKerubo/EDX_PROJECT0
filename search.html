@@ -49,29 +49,36 @@
           </div>
         </div>
 
+        <!-- FORM WITH MULTIPLE DIVS -->
         <div class="row">
-          <form action="https://www.google.com/search">
-               
-            <div class="input-group input-group-lg ">
-             <i class="fas fa-magnifying-glass searchicon "></i>
-                <input
-                  type="text"
-                  class="inputf form-control d-block mx-auto "
-                  name="q"
-                />
-                 
-           
+          <div class="formg">
+            <form action="https://www.google.com/search">
+              <div class="formcontainer">
+                <div class="outside-border">
+                  <div class="inputgroup">
+                    <div class="iconsec">
+                      <div class="icon">
+                        <span class="iconsearch">
+                          <i class="fas fa-magnifying-glass"></i>
+                        </span>
+                      </div>
                     </div>
-       
- 
+                    <div class="formsearch">
+                      <input type="text" name="q" autofocus />
+                    </div>
+                    <div class="imagesearch">
+                      <div class="image-icon">
+                        <i class="fas fa-camera"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-          
-            <div class="d-block mx-auto button">
-              <input type="submit" value="Google Search" />
-              <input type="submit" value="I'm Feeling Lucky" />
-            </div>
-          </form>
-        </div>
+
+        <!-- END OF FORM -->
       </div>
     </section>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
