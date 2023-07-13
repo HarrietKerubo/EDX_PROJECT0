@@ -1,44 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+
     <title>Advanced Search</title>
   </head>
   <body>
-    <div>
-      <label> Advanced Search</label>
+    <nav class="navbar">
+      <div class="container-fluid justify-content-end pt-1">
+        <div class="links">
+          <a href="index.html">Google Search </a>
+        </div>
+        <div class="dot-container">
+          <i class="fa-solid fa-grip-vertical"></i>
+          <span class="circle"></span>
+        </div>
+
+        <div class="button">
+          <a
+            class="btn btn-primary no-underline"
+            href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ"
+            >Sign in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="lab1 ">
+      <label > Advanced Search</label>
     </div>
 
-    ------------------------------------------------------------------------------------
-    <div>
+<div class="border-line"></div>
+</div>
+
+<!-- FIRST SECTION -->
+    <div class="forms">
+      <div class="form1">
       <form action="https://www.google.com/search" method="GET" name="f">
-        <div>
+        <div class="form-header">
           <span> Find pages with ... </span>
         </div>
-        <div>
+        <!-- <div class="form-fields"> -->
+        <div class="labels">
           <label for="as_q"> all these words: </label>
-          <input type="text" name="as_q" />
         </div>
-        <div>
-          <label for="as_epq"> this exact word or phrase: </label>
-          <input type="text" name="as_epq" />
-        </div>
-        <div>
-          <label for="as_oq"> any of these words: </label>
-          <input type="text" name="as_oq" />
-        </div>
-        <div>
-          <label for="as_eq"> none of these words: </label>
-          <input type="text" name="as_eq" />
-        </div>
-        <div>
-          <label for="as_nlo"> numbers ranging from: </label>
-          <input type="text" name="as_nlo" />
-          <label for="as_nhi"> to: </label>
-          <input type="text" name="as_nhi" />
+        <div class="inputs">
+          <div class="infield">
+               <input type="text" name="as_q" class="inputfield" />
+          </div>
+       
         </div>
 
-       ------------------------------------------------------------------------------------
-        <div>
+
+        <div class="labels">
+          <label for="as_epq"> this exact word or phrase: </label>
+          </div>
+          <div class="inputs">
+            <div class="infield">
+          <input type="text" name="as_epq" class="inputfield" />
+        </div>
+        </div>
+        <div class="labels">
+          <label for="as_oq"> any of these words: </label>
+          </div>
+          <div class="inputs">
+            <div class="infield">
+          <input type="text" name="as_oq" class="inputfield"  />
+        </div>
+        </div>
+        <div class="labels">
+          <label for="as_eq"> none of these words: </label>
+          </div>
+          <div class="inputs">
+            <div class="infield">
+          <input type="text" name="as_eq" class="inputfield"/>
+        </div>
+        </div>
+        <div class="labels">
+          <label for="as_nlo"> numbers ranging from: </label>
+        </div >
+        <div class="inputs2">
+        <div class="infield2">
+          <input type="text" name="as_nlo" class="inputfield2" />
+        </div>
+
+          <label for="as_nhi" class="to_input"> to </label>
+      
+          <div class="infield2">
+          <input type="text" name="as_nhi" class="inputfield2" />
+        </div>
+        </div>
+      
+      </div>
+    </form>
+        <div class="border-line"></div>
+      
+
+
+      <!-- <!SECOND SEXCTION--  --> 
+      <div class="forms ">
+        <div class="form2">
+        <form action="https://www.google.com/search" method="GET" name="f">
+        <div class="form-header">
           <span> Then narrow your results by ... </span>
         </div>
         <div>
@@ -158,8 +229,15 @@
         <input type="submit" value="Advanced Search" />
       </form>
  </div>
-      ------------------------------------------------------------------------------------
 
+</div>
+
+<div class="border-line"></div>
+</div>   
+
+<!-- THIRD SECTION -->
+
+<div class="forms ">
     <div>
       <span> You can also ... </span>
     </div>
@@ -183,11 +261,12 @@
         Customize your search settings</a
       >
     </div>
-    ------------------------------------------------------------------------------------
-    <div>
-        <!-- link to google search page -->
-   <a href="https://www.google.com/search/"> Google Search </a>
-    </div>
-   
+
+</div>
+    <div class="border-line"></div>
+      </div>   
+     
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
   </body>
 </html>

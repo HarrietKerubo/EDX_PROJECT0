@@ -59442,5 +59442,82 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.border-line {
+  border-bottom: 1px solid #3c4043;
+}
+
+.lab1 {
+  margin: 0.5rem auto 1.5rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f33f2f;
+  font-weight: normal;
+}
+
+.forms {
+  margin-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form2 {
+  margin-top: 1rem;
+}
+
+.form-header {
+  font-size: 19px;
+  line-height: 27px;
+  font-weight: normal;
+  padding-bottom: 1rem;
+}
+
+.labels {
+  clear: both;
+  float: left;
+  min-width: 167px;
+  width: 16%;
+  height: 42px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inputs {
+  width: 50%;
+  min-width: 167px;
+  min-height: 41px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.inputs .infield {
+  padding-right: 16px;
+}
+.inputs .infield .inputfield {
+  width: 100%;
+  text-align: left;
+  height: 25px;
+}
+
+.inputs2 {
+  width: 100%;
+  min-width: 374px;
+  min-height: 41px;
+}
+.inputs2 .infield2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.inputs2 .infield2 .inputfield2 {
+  width: 100%;
+  text-align: left;
+  height: 25px;
+}
+.inputs2 .to_input {
+  padding: 0 10px 0 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
