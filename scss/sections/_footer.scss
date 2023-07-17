@@ -1,0 +1,27 @@
+@use'../custom' as *; 
+
+.footer{
+
+    margin: 0.5rem auto 1rem 2rem;
+     a{
+    padding-right: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+ }   
+
+a:link,a:visited{
+    color:black;
+  
+}
+
+a:hover{
+    // text-decoration: underline;
+    color: grey
+}
+
+}
+
+
+
+  /* import bootstrap */
+  @import "../../node_modules/bootstrap/scss/bootstrap.scss";

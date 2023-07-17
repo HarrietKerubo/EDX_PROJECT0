@@ -96,26 +96,31 @@
           <input type="text" name="as_nhi" class="inputfield2" />
           </div>
         </div>
-      
+      </form>
       </div>
-    </form>
+      </div>
+    
         <div class="border-line"></div>
       
 
 
       <!-- <!SECOND SEXCTION--  --> 
+
       <div class="forms ">
         <div class="form2">
         <form action="https://www.google.com/search" method="GET" name="f">
         <div class="form-header">
           <span> Then narrow your results by ... </span>
-        </div>
+         </div>
         <div>
-          <label for="lr">language:</label>
+          <label for="lr" class="labels">language:</label>
+          <div class="inputs">
 
+         <div class="infield">
+         
           <input name="lr" value type="hidden" />
 
-          <select>
+          <select class="inputfield" >
             <option value="af">Afrikaans</option>
             <option value="en-GB">English (United Kingdom)</option>
             <option value="en-US">English (United States)</option>
@@ -126,12 +131,17 @@
             <option value="sw">Swahili - Kiswahili</option>
           </select>
         </div>
+         
+      </div>
+       </div>
         <div>
-          <label for="cr">region:</label>
-
+          <label for="cr" class="labels">region:</label>
+          <div class="inputs">
+            
+         <div class="infield">
           <input name="cr" value type="hidden" />
 
-          <select>
+          <select class="inputfield">
             <option value="">Any region</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Aland Islands">Aland Islands</option>
@@ -145,12 +155,16 @@
             <option value="Antigua and Barbuda">Antigua and Barbuda</option>
           </select>
         </div>
+        </div>
+        </div>
         <div>
-          <label for="as_qdr">last update:</label>
+          <label for="as_qdr" class="labels">last update:</label>
+          <div class="inputs">
 
+         <div class="infield">
           <input name="as_qdr" value type="hidden" />
 
-          <select>
+          <select class="inputfield">
             <option value="">anytime</option>
             <option value="24 hours">past 24 hours</option>
             <option value="week">past week</option>
@@ -158,16 +172,27 @@
             <option value="year">past year</option>
           </select>
         </div>
-        <div>
-          <label for="as_sitesearch"> site or domain: </label>
-          <input type="text" name="as_sitesearch" />
+        </div>
         </div>
         <div>
-          <label for="as_occt">terms appearing: </label>
+          <label for="as_sitesearch" class="labels"> site or domain: </label>
+          <div class="inputs">
 
+         <div class="infield">
+          
+          <input class="inputfield" type="text" name="as_sitesearch" />
+        </div>
+     
+        </div>
+        </div>
+        <div>
+          <label for="as_occt" class="labels">terms appearing: </label>
+          <div class="inputs">
+
+         <div class="infield">
           <input name="as_occt" value type="hidden" />
 
-          <select>
+          <select class="inputfield">
             <option value="">anywhere in the page</option>
             <option value="title">in the title of the page</option>
             <option value="text">in the text of the page</option>
@@ -175,11 +200,30 @@
             <option value="links">in links to the page</option>
           </select>
         </div>
+        </div>
+        </div>
         <div>
-          <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">
+          <label for="as_filetype" class="labels">file type: </label>
+          <div class="inputs">
+
+         <div class="infield">
+          <input name="as_filetype" value type="hidden" />
+
+          <select class="inputfield">
+            <option>any format</option>
+            <option>.pdf</option>
+            <option>.ps</option>
+            <option>.doc</option>
+            <option>.ai</option>
+          </select>
+          
+        </div>
+        </div>
+        </div>
+        <!-- <div>
+          <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en" >
             SafeSearch
           </a>
-          :
           <input name="safe" value type="hidden" />
 
           <select>
@@ -187,31 +231,21 @@
             <option value="hide">Hide explicit results</option>
           </select>
         </div>
+         -->
         <div>
-          <label for="as_filetype">file type: </label>
-
-          <input name="as_filetype" value type="hidden" />
-
-          <select>
-            <option>any format</option>
-            <option>.pdf</option>
-            <option>.ps</option>
-            <option>.doc</option>
-            <option>.ai</option>
-          </select>
-          </select>
-        </div>
-        <div>
+          <div class="labels">
           <a
             href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en"
-          >
+            >
             usage rights
           </a>
-          :
+          </div>
+          <div class="inputs">
 
+         <div class="infield">
           <input data-name="sur" data-tbs="true" type="hidden" />
 
-          <select>
+          <select class="inputfield">
             <option value="no_license_filter">not filtered by license</option>
             <option value="free_use">free to use or share</option>
             <option value="free_commerce">
@@ -223,46 +257,85 @@
             </option>
           </select>
         </div>
+        </div>
+        </div>
 
-        <input type="submit" value="Advanced Search" />
+<div class="button pt-3 pb-4 inputs">
+  <div id="as">
+  <button type="submit" class="btn btn-primary " name="btnK">
+    Advanced Search
+  </button>
+</div>
+</div>
       </form>
  </div>
 
 </div>
 
 <div class="border-line"></div>
-</div>   
+  
 
 <!-- THIRD SECTION -->
 
 <div class="forms ">
-    <div>
+  <div class="form3">
+  
+    <div class="form-header">
       <span> You can also ... </span>
     </div>
+
+
+    <div class="label-links">
+      
     <div>
       <a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">
         Find pages that are similar to a URL</a
       >
     </div>
-    <div>
+    </div>
+    
+    <div class="label-links">
+      <div>
       <a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">
         Search pages that you've visited</a
       >
     </div>
-    <div>
+    </div>
+    <div class="label-links">
+      <div>
       <a href="https://support.google.com/websearch?p=adv_operators&hl=en">
         Use operators in the search box</a
       >
     </div>
-    <div>
+    </div>
+    <div class="label-links ">
+      <div>
       <a href="https://www.google.com/preferences?hl=en-KE">
         Customize your search settings</a
       >
     </div>
+       
+
+    </div>
+  
+</div>
 
 </div>
-    <div class="border-line"></div>
-      </div>   
+
+ <div class="border-line pt-4"></div> 
+  
+<div class="footer">
+  <a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-KE&fg=1">
+    Help
+  </a>
+  <a href="https://policies.google.com/privacy?hl=en-KE&fg=1">
+    Privacy
+  </a>
+  <a href="https://policies.google.com/terms?hl=en-KE&fg=1">
+   Terms
+  </a>
+</div>
+
      
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
